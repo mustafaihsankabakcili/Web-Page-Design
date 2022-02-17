@@ -6,6 +6,11 @@
     font-family: 'Roboto Serif', sans-serif;
 }
 
+body {
+    position: relative;
+    height: 100%;
+}
+
 nav {
     display: flex;
     height: 75px;
@@ -56,7 +61,8 @@ header {
     background-position: center;
     text-align: center;
     justify-content: center;
-    height: 450px;
+    height: 425px;
+    padding: 100px;
 }
 
 .title {
@@ -88,16 +94,18 @@ header {
     width: 200px;
     padding: 10px;
     color: black;
+    margin-right: 2.5px;
 }
 
 .subscribe input[value=Subscribe] {
     background-color: #E8491D;
     width: 100px;
+    margin-left: 2.5px;
 }
 
 .info {
     display: flex;
-    margin: 0 10%;
+    margin: 17px 10%;
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
     align-items: center;
@@ -109,7 +117,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px 5px 0;
+    margin: 25px 5px;
 }
 
 .info_logo {
@@ -128,8 +136,6 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: #35424A;
     width: 100%;
     height: 100px;
@@ -138,4 +144,34 @@ footer {
 footer img {
     width: 200px;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1135px) {
+    .info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 0.85rem;
+    }
+    a {
+        font-size: 0.85rem;
+    }
+    .subscribe input {
+        width: 5px;
+    }
+    .subscribe input[type=email] {
+        width: 150px;
+    }
+    .subscribe input[value=Subscribe] {
+        width: 80px;
+    }
+    .info {
+        flex-direction: column;
+    }
 }
