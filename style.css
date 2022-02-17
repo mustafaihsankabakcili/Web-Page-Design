@@ -34,8 +34,17 @@ nav {
     text-decoration: none;
 }
 
+.links a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
 .home_link {
     color: #A8508B;
+}
+
+.home_link:active {
+    color: white;
 }
 
 header {
