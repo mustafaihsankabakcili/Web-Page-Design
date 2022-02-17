@@ -55,7 +55,7 @@ nav {
 header {
     display: flex;
     flex-direction: column;
-    background-image: url(images/showcase.jpeg);
+    background-image: url(../images/showcase.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
